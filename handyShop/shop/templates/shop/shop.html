@@ -1,0 +1,20 @@
+{% extends 'shop/index.html' %}
+{% load static %}
+{% block content %}
+<div class="row row-cols-4">
+  {% for artikel in artikels %}
+  <div class="col mb-3">
+    <div class="card" style="max-width: 25rem">
+      <img src="{{ artikel.bild.url }}" class="card-img-top" alt="Produktbild" />
+      <div class="card-body">
+        <h5 class="card-title">{{ artikel.name }}</h5>
+        <p class="card-text">{{ artikel.beschreibung }}</p>
+        <p class="card-text">{{ artikel.preis |floatformat:2 }}€</p>
+        <button data-artikel="{{artikel.id}}" data-action="bestellen"
+          class="btn btn-secondary warenkorb-bestellen">Bestellen</button>
+      </div>
+    </div>
+  </div>
+  {% endfor %}
+</div>
+{% endblock content %}

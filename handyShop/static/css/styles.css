@@ -1,0 +1,139 @@
+/* Base styling */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f5f5f5;
+    color: #333;
+    margin-top: 20px;
+  }
+  
+  a {
+    color: #007bff;
+    text-decoration: none;
+  }
+  
+  a:hover {
+    color: #0056b3;
+  }
+  
+  /* Navbar styling */
+  .navbar {
+    background-color: #fff;
+    border-bottom: 1px solid #eaeaea;
+  }
+  
+  .navbar-brand {
+    color: #333 !important;
+  }
+  
+  .nav-link {
+    margin-right: 15px;
+  }
+  
+  .nav-link.btn-light {
+    border: 1px solid #ddd;
+  }
+  
+  .badge {
+    font-size: 0.75em;
+  }
+  
+  /* Messages styling */
+  .messages {
+    padding: 10px;
+    margin-bottom: 20px;
+  }
+  
+  .messages div {
+    margin: 5px 0;
+    padding: 10px;
+    border-radius: 5px;
+    background-color: #78807a;
+    color: #ffffff;
+  }
+  
+  /* Main content and card styling */
+  .container {
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .card {
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .card-img-top {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+  }
+  
+  .card-title {
+    color: #333;
+  }
+  
+  .card-text {
+    color: #666;
+  }
+  
+  .warenkorb-bestellen {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+  }
+  
+  .warenkorb-bestellen:hover {
+    background-color: #0056b3;
+  }
+  
+  /* Footer styling */
+  .fusszeile {
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px 0;
+    text-align: center;
+    margin-top: 20px;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+  }
+  
+  /* Table styling */
+  .table {
+    margin-top: 20px;
+  }
+  
+  .table th, .table td {
+    padding: 15px;
+    vertical-align: middle;
+  }
+  
+  .btn-outline-danger {
+    color: #dc3545;
+    border-color: #dc3545;
+  }
+  
+  .btn-outline-danger:hover {
+    color: #fff;
+    background-color: #dc3545;
+    border-color: #dc3545;
+  }
+  .messages-popup {
+    color: #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 50%;
+    visibility: hidden; /* Initially hidden */
+    z-index: 10;
+  }
+  
+  .message {
+    text-align: center;
+  }
+  

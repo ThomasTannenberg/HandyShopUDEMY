@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+  {% load static %}
+  <meta charset="UTF-8" />
+  <title>Shop - The Ultimative</title>
+
+  <link rel="stylesheet" href="{% static 'css/styles.css' %}" />
+  <link rel="stylesheet" href="{% static 'css/bootstrap.min.css' %}">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+
+  <script src="{% static 'js/securitytoken.js'%}"></script>
+</head>
+
+<body>
+  {% include 'shop/menu.html' %}
+
+  {% if messages %}
+
+  <ul class="messages messages-popup">
+    {% for message in messages %}
+    <div class="message" {{message.tags}}> {{message}}</div>
+    {% endfor %}
+  </ul>
+
+
+
+  {% endif %}
+
+
+  <div class="container">
+    {% block content %}
+
+    {% endblock content %}
+  </div>
+
+  {% include 'shop/fusszeile.html' %}
+
+  <script src="{% static 'js/bootstrap.bundle.min.js' %}"></script>
+  <script src="{% static 'js/warenkorb.js' %}"></script>
+  <script src="{% static 'js/messages.js' %}"></script>
+</body>
+
+</html>
